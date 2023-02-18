@@ -1,8 +1,10 @@
 ## Interface: 11200
 ## Title: SmartHealer
+## Title-ruRU: Умный Целитель
 ## Author: Garkin
 ## Version: 1.1
 ## Notes: Autoscales heals in macros (/heal <spell_name>) and click heals for pfUI, Clique and ClassicMouseover.
+## Notes-ruRU: Автоматически масштабирует исцеление в макросах (/heal <spell_name>) и лечение кликом для pfUI, Clique и ClassicMouseover.
 ## SavedVariables: SmartHealerDB
 ## OptionalDeps: Ace2, TheoryCraft, pfUI, Clique, ClassicMouseover
 
@@ -23,6 +25,7 @@ libs\RosterLib-2.0\RosterLib-2.0.lua
 libs\ItemBonusLib-1.0\Locales\enUS.lua
 libs\ItemBonusLib-1.0\Locales\frFR.lua
 libs\ItemBonusLib-1.0\Locales\deDE.lua
+libs\ItemBonusLib-1.0\Locales\ruRU.lua
 libs\ItemBonusLib-1.0\ItemBonusLib-1.0.lua
 libs\HealComm-1.0\HealComm-1.0.lua
 libs\SpellCache-1.0\SpellCache-1.0.lua
