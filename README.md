@@ -20,7 +20,7 @@ Spell name shouldn't contain rank. If there is a rank, heal won't be scaled. It 
 The same goes for supported addons. Do not specify rank in click actions (in case of Clique, spell must be set to "Max").  
 
 ## Installation
-1. Download **[Latest Version](https://gitlab.com/AMGarkin/SmartHealer/-/archive/master/SmartHealer-master.zip)**
+1. Download **[Latest Version](https://github.com/melbaa/SmartHealer/archive/refs/heads/master.zip)**
 2. Unpack the Zip file
 3. Rename the folder "SmartHealer-master" to "SmartHealer"
 4. Copy "SmartHealer" into \<WoW-directory\>\Interface\AddOns

@@ -20,7 +20,7 @@
 То же самое и с поддерживаемыми аддонами. Не указывайте ранг в click actions (в случае Clique заклинание должно быть установлено на «Макс»).  
 
 ## Установка
-1. Скачать **[Последнюю версию](https://gitlab.com/AMGarkin/SmartHealer/-/archive/master/SmartHealer-master.zip)**
+1. Скачать **[Последнюю версию](https://github.com/melbaa/SmartHealer/archive/refs/heads/master.zip)**
 2. Распакуйте файл - Zip
 3. Переименуйте папку  "SmartHealer-master" в "SmartHealer"
 4. Скопируйте "SmartHealer" в \<WoW-каталог\>\Interface\AddOns
