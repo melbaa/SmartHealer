@@ -46,7 +46,8 @@ end
 function SmartHealer:CastHeal(spellName)
 	local overheal
 
-	if not spellName or type(spellName) ~= "string" then
+    -- self:Print("spellname: ", spellName, type(spellName), string.len(spellName))
+	if not spellName or string.len(spellName) == 0 or type(spellName) ~= "string" then
 		return
 	else
 		spellName = string.gsub(spellName, "^%s*(.-)%s*$", "%1")	--strip leading and trailing space characters
@@ -72,10 +73,7 @@ function SmartHealer:CastHeal(spellName)
 	local spell, rank = libSC:GetRanklessSpellName(spellName)
 	local unit, onSelf
 
-	if IsAltKeyDown() then
-		unit = "player"
-		onSelf = true
-	elseif UnitExists("target") and UnitCanAssist("player", "target") then
+	if UnitExists("target") and UnitCanAssist("player", "target") then
 		unit = "target"
 	end
 	
@@ -94,6 +92,8 @@ function SmartHealer:CastHeal(spellName)
 			spellName = libSC:GetSpellNameText(spell, rank)
 		end
 	end	
+
+    -- self:Print("spellname: ", spellName)
 	
 	CastSpellByName(spellName, onSelf)
 
