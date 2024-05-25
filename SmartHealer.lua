@@ -329,6 +329,7 @@ function SmartHealer:pfUI_PFCast(msg)
     local spell, rank = libSC:GetRanklessSpellName(msg)
     if spell and rank == nil and libHC.Spells[spell] then
         local unitstr = getProperTargetBasedOnMouseOver()
+        if unitstr == nil then return end
         rank = self:GetOptimalRank(msg, unitstr)
         if rank then
             self.hooks[SlashCmdList]["PFCAST"](libSC:GetSpellNameText(spell, rank)) -- mission accomplished
